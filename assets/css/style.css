@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background: #0076F5;
+    --text-color: #fff;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-weight: bold;
+    background: var(--background);
+    color: var(--text-color);
+}
+
+pre {
+    margin-bottom: 0;
+}
+
+span,
+p {
+    transform: translateZ(0) !important;
+    will-change: transform !important;
+    backface-visibility: hidden !important;
+    perspective: 1000px !important;
+}
+
+.highlight {
+    font-size: 23px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 8px dashed var(--text-color);
+    height: 100%;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-bottom: 8px dashed var(--text-color);
+}
+
+#step-1 pre {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 150px;
+    text-shadow: 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#step-2 img {
+    width: 44%;
+}
+
+#step-2 span {
+    font-size: 35px;
+    color: rgb(31, 31, 31) !important;
+}
+
+#step-3 pre {
+    background-color: #282C34;
+    min-height: 680px;
+    user-select: none;
+}
+
+#step-3 pre > * {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+}
+
+.highlight {
+    color: #eee;
+    overflow: hidden;
+    font-size: 22px;
+}
+
+.highlight-keyword {
+    color: #c678dd;
+}
+
+.highlight-name {
+    color: #f0758a;
+}
+
+.highlight-name.highlight-bg {
+    background-color: #f0758a;
+}
+
+.highlight-selector-class,
+.highlight-keyword {
+    color: rgb(69, 229, 69);
+}
+
+.highlight-selector-class.highlight-bg {
+    background-color: #45E545;
+}
+
+.highlight-special-str {
+    color: #e2e83e;
+}
+
+.highlight-special-str.highlight-bg {
+    background-color: #e2e83e;
+}
+
+.highlight-attribute {
+    color: #57D8FF;
+}
+
+.highlight-attribute.highlight-bg {
+    background-color: #57D8FF;
+}
+
+.highlight-const {
+    color: #b779fa;
+}
+
+.highlight-const.highlight-bg {
+    background-color: #b779fa;
+}
+
+.highlight-parameters {
+    color: #ffa42d;
+}
+
+.highlight-parameters.highlight-bg {
+    background-color: #ffa42d;
+    ;
+}
+
+.highlight-bg {
+    color: #000 !important;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.square {
+    font-size: 30px;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.hl-input {
+    width: 100%;
+    min-height: 35px;
+    z-index: 0;
+    opacity: 0;
+}
+
+#step-4 div {
+    font-size: 130px;
+    text-shadow: 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#step-4 img.be-creative {
+    width: 22%;
+    position: absolute;
+    bottom: 12%;
+    right: 12%;
+}
+
+#step-4 .rainbow-text {
+    position: relative;
+}
+
+#step-4 .rainbow-text::before {
+    content: 'transformar';
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 0%;
+    z-index: 1;
+    text-align: center;
+    font-weight: 700;
+    color: #FD4CC8;
+    overflow: hidden;
+    white-space: no-wrap;
+    background-size: cover;
+    text-shadow: 0 !important;
+    box-shadow: 0 !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#step-4.past .rainbow-text::before,
+#step-4.present .rainbow-text::before {
+    animation: grow-color 2s linear forwards;
+}
+
+#step-4 img.be-creative {
+    animation: rotate 2s linear infinite alternate-reverse;
+}
+
+#step-5 div {
+    font-size: 110px;
+    text-shadow: 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#step-5.past .light-bulb,
+#step-5.present .light-bulb {
+    animation: light-bulb 3s linear forwards;
+}
+
+#step-5 .animation-text {
+    position: relative;
+}
+
+#step-5.past .animation-text::after,
+#step-5.present .animation-text::after {
+    content: 'inovação';
+    position: absolute;
+    top: -5px;
+    left: -.2px;
+    width: 0;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: grow-color 2s linear forwards;
+    color: #f7e707;
+}
+
+#step-6 div {
+    font-size: 120px;
+    text-shadow: 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#step-6 .animation-text {
+    position: relative;
+}
+
+#step-6.past .animation-text::after,
+#step-6.present .animation-text::after {
+    content: 'propósito';
+    position: absolute;
+    top: -6px;
+    left: -.2px;
+    width: 0;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: grow-color 2s linear forwards;
+    color: #4FFFE7;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes grow-color {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1919px) {
+    .box {
+        width: 120vw;
+        height: 95vh;
+    }
+}
